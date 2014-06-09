@@ -46,17 +46,24 @@ body {
 }
 
 a {
-  color:#D12028;
+  color:#36D7B7;
   text-decoration: none;
 }
+
 h2 {
   text-transform: uppercase;
   font-size: 2em;
   display: inline-block;
+  margin:0 1% 10%;
 }
 
-h2 {
-  margin:10% 1% 5%;
+.fa {
+  color:#36D7B7;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+  font-size: 30px;
+  position:relative;
+  top:17px;
 }
 
 .innerWrapper {
@@ -65,25 +72,57 @@ h2 {
   padding-top:1%;
   border-left: 5px double #222;
   border-right: 5px double #222;
+  overflow: hidden;
 }
 
 .left {
   float:left;
   width:68%;
   margin-right: 2%;
-
 }
 
 .full {
-  width:60%;
+  width:75%;
   margin: 0 auto;
 }
 
-.button {
+.button a {
   padding: 1% 3%;
-  border: 1px double blue;
+  border: 3px double #36D7B7;
   display:inline-block;
+  background-color: #FFF;
+  color: #444;
+  margin-top: 3%;
+  text-transform: uppercase;
+  transition: all 0.5s;
 }
+
+.button a:hover {
+  border-color: #444;
+  background-color: rgba(54,215,183,0.5)
+}
+
+.headshot {
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  border:6px double #444;
+  width:20%;
+  overflow: hidden;
+  float:left;
+  margin-left:10%;
+}
+
+.headshot img {
+  -webkit-transform:rotate(45deg) scale(1.5);
+  transform:rotate(45deg) scale(1.5);
+}
+
+.textAndButton {
+  width: 55%;
+  float:right;
+}
+
+
 
 /* =============================================================================
                      Header
@@ -127,6 +166,11 @@ header h1 {
 
 .footer {
   clear:both;
+  border-top: 5px double #444;
+}
+
+.footer .innerWrapper {
+  padding: 5% 0;
 }
 
 
@@ -134,27 +178,39 @@ header h1 {
                    Navigation 
    ========================================================================== */
 
-ul.menu {
-  text-align: center;
-  padding-left: 20px;
+ul {
+    text-align:center;
+    padding-left:0;
+
 }
-ul.menu li {
-  font-size: 0.8em;
-  list-style: none;
-  display:inline-block;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 3%;
-  border-bottom:4px double #FFF;
-  padding:0 1% 0.5% 1%;
-  transition: border-color 0.3s;
+li{
+    padding:1% 1.5%;
+    margin-left: 3%;
+    margin-right:3%;
+    display:inline-block;
+    position:relative;
+    list-style:none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+li:after{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    height:5px;
+    width:0%;
+    border-bottom: 3px double #36D7B7;
+    display:block;
+    content:'';
+    transition:0.3s;
 }
 
-ul.menu li:hover {
-  border-color: #36D7B7;
+li:hover:after{
+    left:0;
+    width:100%;
 }
 
-ul.menu a {
+li a {
   color:#FFF;
 }
 
@@ -162,12 +218,65 @@ ul.menu a {
                   Sections
    ========================================================================== */
 .about {
-  height: 500px; /*change this*/
   border-top: none;
+  margin-top:10%;
 }
 
+.about p {
+  margin-top:0;
+}
 
+.portfolio {
+  margin-top:10%;
+}
 
+.contact {
+  margin: 10% auto;
+  width:80%;
+}
+
+.socialBoxes {
+  width:100%;
+  margin-top:15%;
+}
+
+.socialBox {
+  width:70px;
+  height:70px;
+  border: 3px double #444;
+  margin:0 3%;
+  display:inline-block;
+  background-color: #FFF;
+  transition: background-color 0.3s;
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(45deg);
+}
+
+.socialBox:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.controlTwitter {
+  width:40%;
+  float:right;
+}
+
+/* =============================================================================
+                   Portfolio 
+   ========================================================================== */
+.portfolio {
+  width:85%;
+}
+.portfolioPiece {
+  width: 45%;
+  margin:1%;
+  display:inline-block;
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
 
 /* =============================================================================
                    Comment Styling 

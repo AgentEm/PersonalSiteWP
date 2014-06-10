@@ -28,11 +28,11 @@
 
 
 <body <?php body_class(); ?>>
-
+<a href="#" class="toTop">go to top<a>
 <header>
   <div class="innerWrapper">
     <nav><?php wp_nav_menu( array( 'container' => false, 'menu' => 'header' ) ); ?></nav>
-    <h1>
+    <h1 id="home">
       <img src="<?php echo get_template_directory_uri(); ?>/images/headerCropped.png">
     </h1>
 

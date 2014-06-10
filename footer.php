@@ -7,14 +7,14 @@
 </div>
 
 <script>
-/* Google Analytics! */
+
+// Google Analytics!
  var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID 
  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
  g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
  s.parentNode.insertBefore(g,s)}(document,"script"));
 
-/* Smooth scroll*/
-
+// Smooth scroll
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -30,7 +30,7 @@ $(function() {
   });
 });
 
-/* Video hover playback control */
+// Video hover playback control
 $(function() {
   $("video").hover(function() {
     this.play();
@@ -39,14 +39,27 @@ $(function() {
   });
 });
 
-/* Changes the margin when you submit the contact form */
+// Changes the margin when you submit the contact form
 $(function() {
   $("#ninja_forms_field_5").on("click", function(){
     $(".socialBoxes").css("margin-top","35%");
   });
 });
 
-</script>
+//scroll to top button
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 400) {
+      $('.toTop').fadeIn();
+    } else {
+      $('.toTop').fadeOut();
+    }
+  });
+  
+  $('.toTop').click(function(){
+    $('html, body').animate({scrollTop : 0},800);
+    return false;
+  });
 
+</script>
 </body>
 </html>

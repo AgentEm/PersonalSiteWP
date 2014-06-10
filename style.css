@@ -269,13 +269,21 @@ li a {
 }
 .portfolioPiece {
   width: 45%;
-  margin:1%;
+  margin:2%;
   display:inline-block;
 }
 
 video {
   width: 100%    !important;
   height: auto   !important;
+}
+
+video[poster*="images"] {
+  width:100%; 
+}
+
+.techDescription {
+  color:#D91E18;
 }
 
 /* =============================================================================

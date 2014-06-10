@@ -1,6 +1,6 @@
 <div class="footer">
 	<div class="innerWrapper">
-    <p>Design and Code &copy; <a href="mailto:eeporta@gmail.com">Emily Porta</a> <?php echo date('Y'); ?></p>
+    <p>Design and Code &copy; <a href="mailto:hello@emilyporta.com">Emily Porta</a> <?php echo date('Y'); ?></p>
     <img src="<?php echo get_template_directory_uri(); ?>/images/footerOrnament.jpg">
     <?php wp_footer(); ?>
   </div>

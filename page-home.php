@@ -9,10 +9,12 @@ get_header();  ?>
   <div class="innerWrapper">
     
     <div class="about full" id="about">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentLeft.jpg">
-      <h2>About Me</h2>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentRight.jpg">
-      
+      <div class="sectionHeadingContainer">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentLeft.jpg">
+        <h2>About Me</h2>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentRight.jpg">
+      </div>
+
       <div class="wholeSection clearfix">
         <div class="headshot">
           <img src="<?php echo get_template_directory_uri(); ?>/images/emilyCropped.jpg">
@@ -31,9 +33,12 @@ get_header();  ?>
     
 
     <div class="portfolio clearfix" id="portfolio">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentLeft.jpg">
-      <h2>My Portfolio</h2>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentRight.jpg">
+      <div class="sectionHeadingContainer">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentLeft.jpg">
+        <h2>My Portfolio</h2>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentRight.jpg">
+      </div>
+
       <h3>Hover over any video below to see the site in action.</h3>
       <h3>You can also see my code and fork my projects on <a href="http://github.com/agentem" target="_blank">Github</a>.</h3>
 
@@ -123,9 +128,11 @@ get_header();  ?>
     </div> <!--/.portfolio-->
 
     <div class="contact" id="contact">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentLeft.jpg">
-      <h2>Get in touch</h2>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentRight.jpg">
+      <div class="sectionHeadingContainer">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentLeft.jpg">
+        <h2>Get in touch</h2>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentRight.jpg">
+      </div>
 
       <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); } ?>
       
@@ -135,7 +142,7 @@ get_header();  ?>
         </script>
       </div> <!--/.controlTwitter-->
 
-      <div class="socialBoxes">
+      <div class="socialBoxes clearfix">
         <div id="github" class="socialBox">
           <a href="http://github.com/agentem" target="_blank">
             <i class="fa fa-github-alt"></i>

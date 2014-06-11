@@ -80,10 +80,10 @@ h2 {
   overflow: hidden;
 }
 
+
 .left {
-  float:left;
-  width:68%;
-  margin-right: 2%;
+  width:80%;
+  margin:5% auto 15%;
 }
 
 .full {
@@ -128,9 +128,8 @@ h2 {
 }
 
 
-
 /* =============================================================================
-                     Header
+                      Header
    ========================================================================== */
 header {
   background-color: #222;
@@ -146,6 +145,80 @@ header img {
 header h1 {
   margin-bottom:0;
 }
+
+.blog header img, .single header img {
+  width:40%;
+  float:left;
+}
+
+
+/* =============================================================================
+                   Navigation 
+   ========================================================================== */
+
+nav ul {
+    text-align:center;
+    padding-left:0;
+
+}
+nav li{
+  padding:1% 1.5%;
+  margin-left: 3%;
+  margin-right:3%;
+  display:inline-block;
+  position:relative;
+  list-style:none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+nav li:after{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    height:5px;
+    width:0%;
+    border-bottom: 3px double #36D7B7;
+    display:block;
+    content:'';
+    transition:0.3s;
+}
+
+nav li:hover:after{
+    left:0;
+    width:100%;
+}
+
+nav li a {
+  color:#FFF;
+}
+
+nav li a:hover {
+  color:#FFF;
+}
+
+.blog nav, .single nav {
+  width: 50%;
+  float: right;
+  margin-top: 16%;
+  font-size: 0.9em;
+}
+
+.toTop {
+  background: url("images/background.png");
+  width: 50px;
+  border: 3px double #444;
+  position: fixed;
+  bottom:15px;
+  right:30px;
+  z-index: 9000;
+  display:none;
+}
+
+a.toTop {
+  color:#D91E18;
+  text-transform: uppercase;
+}
+
 
 /* =============================================================================
                    Sidebar 
@@ -178,67 +251,10 @@ header h1 {
   padding: 5% 0;
 }
 
-
-/* =============================================================================
-                   Navigation 
-   ========================================================================== */
-
-ul {
-    text-align:center;
-    padding-left:0;
-
+.blog .footer p {
+  text-align: center;
+  margin: 0 auto 1%;
 }
-li{
-    padding:1% 1.5%;
-    margin-left: 3%;
-    margin-right:3%;
-    display:inline-block;
-    position:relative;
-    list-style:none;
-    text-transform: uppercase;
-    font-size: 0.8em;
-}
-li:after{
-    position:absolute;
-    bottom:0;
-    left:50%;
-    height:5px;
-    width:0%;
-    border-bottom: 3px double #36D7B7;
-    display:block;
-    content:'';
-    transition:0.3s;
-}
-
-li:hover:after{
-    left:0;
-    width:100%;
-}
-
-li a {
-  color:#FFF;
-}
-
-li a:hover {
-  color:#FFF;
-}
-
-.toTop {
-  background: url("images/background.png");
-  width: 50px;
-  border: 3px double #444;
-  position: fixed;
-  bottom:15px;
-  right:30px;
-  z-index: 9000;
-  display:none;
-}
-
-a.toTop {
-  color:#D91E18;
-  text-transform: uppercase;
-}
-
 /* =============================================================================
                   Sections
    ========================================================================== */
@@ -274,7 +290,7 @@ a.toTop {
   display:inline-block;
   background-color: #FFF;
   -webkit-transform:rotate(-45deg);
-  transform:rotate(45deg);
+  transform:rotate(-45deg);
 }
 
 .socialBox:hover {
@@ -311,6 +327,42 @@ video[poster*="images"] {
   color:#E08283;
 }
 
+/* =============================================================================
+                   Blog
+   ========================================================================== */
+.blog .entry-title {
+  line-height:1.5em;
+}
+
+.blog h2 {
+  margin-bottom:5%;
+}
+
+.blog p {
+  text-align: left;
+  width:80%;
+  margin-left:13%;
+}
+
+.blog .entry-content li, .single .entry-content li {
+  list-style:square;
+  list-style-position:inside;
+  text-align:left;
+  margin-left:20%;
+}
+
+.blog img.aligncenter {
+  margin:5% 0;
+}
+
+.blog .post {
+  margin-bottom:10%;
+}
+
+h1.entry-title {
+  text-transform: uppercase;
+  line-height: 1.5em;
+}
 /* =============================================================================
                    Comment Styling 
    ========================================================================== */

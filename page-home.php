@@ -34,12 +34,17 @@ get_header();  ?>
       <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentLeft.jpg">
       <h2>My Portfolio</h2>
       <img src="<?php echo get_template_directory_uri(); ?>/images/h2OrnamentRight.jpg">
-      <h3>See my code and fork my projects on <a href="http://github.com/agentem" target="_blank">Github</a>.</h3>
+      <h3>Hover over any video below to see the site in action.</h3>
+      <h3>You can also see my code and fork my projects on <a href="http://github.com/agentem" target="_blank">Github</a>.</h3>
 
 
 
       <div class="portfolioPiece">
-      <a href="http://emilyporta.com/coverme" target="_blank"><video src="<?php echo get_template_directory_uri(); ?>/video/coverme.mp4" loop muted>
+      <a href="http://emilyporta.com/coverme" target="_blank">
+      <video loop muted>
+        <source src="<?php echo get_template_directory_uri(); ?>/video/coverme.webm" type="video/webm"> 
+        <source src="<?php echo get_template_directory_uri(); ?>/video/coverme.mp4" type="video/mp4">
+        I'm sorry; your browser doesn't support HTML5 video in WebM or MP4. The link below will take you to the project's live site.
       </video></a>
       <p class="description">Cover Me is a web application that elegantly uses the Youtube API (v3) to find the best cover for any song title you type in. The page dynamically changes on submit, is fully responsive, and is cross-browser tested.</p> 
       <p>This site is live at: <a href="http://emilyporta.com/coverme" target="_blank">emilyporta.com/coverme</a></p>
@@ -47,24 +52,39 @@ get_header();  ?>
       </div> <!--/.portfolioPiece-->
 
       <div class="portfolioPiece">
-      <a href="http://emilyporta.com/gallery" target="_blank"><video src="<?php echo get_template_directory_uri(); ?>/video/gallery.mp4" loop muted>
-      </video></a>
+      <a href="http://emilyporta.com/gallery" target="_blank">
+        <video loop muted>
+          <source src="<?php echo get_template_directory_uri(); ?>/video/gallery.webm" type="video/webm"> 
+          <source src="<?php echo get_template_directory_uri(); ?>/video/gallery.mp4" type="video/mp4">
+          I'm sorry; your browser doesn't support HTML5 video in WebM or MP4. The link below will take you to the project's live site.
+        </video>
+      </a>
       <p class="description">A jQuery gallery designed and developed by myself and <a href="http://www.morewhitespace.ca/">Jen Abella-Froese</a>, incorporating a jQuery lightbox and dynamically updating content and imagery. Hover over the video tumbnail to see it in action!</p>
       <p>This site is live at: <a href="http://emilyporta.com/gallery" target="_blank">emilyporta.com/gallery</a></p>
       <p class="techDescription">HTML - CSS - Javascript - jQuery - Design - Paired Programming</p>
       </div> <!--/.portfolioPiece-->
 
       <div class="portfolioPiece">
-      <a href="http://emilyporta.com/oldsite" target="_blank"><video src="<?php echo get_template_directory_uri(); ?>/video/oldsite.mp4" loop muted>
-      </video></a>
+      <a href="http://emilyporta.com/oldsite" target="_blank">
+        <video loop muted>
+          <source src="<?php echo get_template_directory_uri(); ?>/video/oldsite.webm" type="video/webm"> 
+          <source src="<?php echo get_template_directory_uri(); ?>/video/oldsite.mp4" type="video/mp4">
+          I'm sorry; your browser doesn't support HTML5 video in WebM or MP4. The link below will take you to the project's live site.
+        </video>
+      </a>
       <p class="description">For my first Hackeryou project, I created a personal one-page site, with a clean, minimalistic design reflective of my preferred aesthetic. It includes a Javascript smoothscroll.</p>
       <p>This site is live at: <a href="http://emilyporta.com/oldsite" target="_blank">emilyporta.com/oldsite</a></p>
       <p class="techDescription">HTML - CSS - Design</p>
       </div> <!--/.portfolioPiece-->
 
       <div class="portfolioPiece">
-      <a href="http://emilyporta.com/hackeryou" target="_blank"><video src="<?php echo get_template_directory_uri(); ?>/video/hackeryou.mp4" loop muted>
-      </video></a>
+      <a href="http://emilyporta.com/hackeryou" target="_blank">
+        <video loop muted>
+          <source src="<?php echo get_template_directory_uri(); ?>/video/hackeryou.webm" type="video/webm"> 
+          <source src="<?php echo get_template_directory_uri(); ?>/video/hackeryou.mp4" type="video/mp4">
+          I'm sorry; your browser doesn't support HTML5 video in WebM or MP4. The link below will take you to the project's live site.
+        </video>
+      </a>
       <p class="description">I took the complex site at <a href="http://hackeryou.com">hackeryou.com</a> and remade the homepage from scratch. The site is fully responsive, also using an original mobile design.</p> 
       <p>This site is live at: <a href="http://emilyporta.com/hackeryou" target="_blank">emilyporta.com/hackeryou</a></p>
       <p class="techDescription">Responsive design - HTML - CSS - SASS - Design from client mockups</p>
@@ -72,16 +92,26 @@ get_header();  ?>
 
 
       <div class="portfolioPiece">
-      <a href="http://emilyporta.com/styleguide" target="_blank"><video src="<?php echo get_template_directory_uri(); ?>/video/styleguide.mp4" loop muted>
-      </video></a>
+      <a href="http://emilyporta.com/styleguide" target="_blank">
+        <video loop muted>
+          <source src="<?php echo get_template_directory_uri(); ?>/video/styleguide.webm" type="video/webm"> 
+          <source src="<?php echo get_template_directory_uri(); ?>/video/styleguide.mp4" type="video/mp4">
+          I'm sorry; your browser doesn't support HTML5 video in WebM or MP4. The link below will take you to the project's live site.
+        </video>
+      </a>
       <p class="description">This is a style guide created based on a client brief for the Deep Lagoon Hostel, showcasing part of my design and development process.</p>
       <p>This site is live at: <a href="http://emilyporta.com/styleguide" target="_blank">emilyporta.com/styleguide</a></p>
       <p class="techDescription">HTML - CSS - SASS - Wireframing - Design</p>
       </div> <!--/.portfolioPiece-->
 
       <div class="portfolioPiece">
-      <a href="http://wolever.net" target="_blank"><video src="<?php echo get_template_directory_uri(); ?>/video/wolever.mp4" loop muted>
-      </video></a>
+      <a href="http://wolever.net" target="_blank">
+        <video loop muted>
+          <source src="<?php echo get_template_directory_uri(); ?>/video/wolever.webm" type="video/webm"> 
+          <source src="<?php echo get_template_directory_uri(); ?>/video/wolever.mp4" type="video/mp4">
+          I'm sorry; your browser doesn't support HTML5 video in WebM or MP4. The link below will take you to the project's live site.
+        </video>
+      </a>
       <p class="description">A simple and clean one-page site created for developer David Wolever, utilizing CSS keyframe animation.</p>
       <p>This site is live at: <a href="http://wolever.net" target="_blank">wolever.net</a></p>
       <p class="techDescription">HTML - CSS - Design</p>

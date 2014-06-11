@@ -33,7 +33,6 @@
 
 
     </div><!--/left-->	
-    <?php get_sidebar(); ?>
   </div> <!-- /.innerWrapper -->
 </div> <!-- /.section -->
 <?php get_footer(); ?>

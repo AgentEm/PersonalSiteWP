@@ -36,11 +36,17 @@ img.alignright    { padding-left: 5px; }
                    Default Styling 
    ========================================================================== */
 
+@font-face{
+    font-family: "Futura";
+    src: url("Futura.woff") format("woff"),
+    url("Futura.ttf") format("truetype");
+}
+
 body {
   color: #444;
   background-color: #FFF;
   font-size: 1em;
-  font-family: Futura, Helvetica, sans-serif;
+  font-family: Futura, Verdana, sans-serif;
   text-align: center;
   line-height: 1.5em;
 }

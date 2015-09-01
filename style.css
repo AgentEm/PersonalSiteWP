@@ -36,10 +36,16 @@ img.alignright    { padding-left: 5px; }
                    Default Styling 
    ========================================================================== */
 
-@font-face{
+@font-face {
     font-family: "Futura";
-    src: url("Futura.woff") format("woff"),
-    url("Futura.ttf") format("truetype");
+    src: local("Futura"),
+    url("Futura.woff");
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: local("Avenir"),
+  url("avenir.ttc");
 }
 
 body {
@@ -346,17 +352,21 @@ video[poster*="images"] {
   margin-bottom:5%;
 }
 
-.blog p {
+.blog h3, .entry-content h3 {
+  font-size:1.5em;
+  line-height: 1.5em;
+}
+
+.blog p, .entry-content p, .entry-content li, .single .entry-content li {
   text-align: left;
-  width:80%;
-  margin-left:13%;
+  font-family: "Avenir", Helvetica, sans-serif;
+  line-height: 1.7em;
 }
 
 .blog .entry-content li, .single .entry-content li {
   list-style:square;
   list-style-position:inside;
-  text-align:left;
-  margin-left:20%;
+  margin-left:10%;
 }
 
 .blog img.aligncenter {

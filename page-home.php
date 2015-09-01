@@ -21,15 +21,15 @@ get_header();  ?>
         </div>
         
       <div class="textAndButton">
-        <p>Hi, I'm Emily. I'm a front-end web developer based in Toronto who loves creating great looking web products with rock-solid code. I'm currently looking for a position as a junior developer at a company that values life-long learning and passion for innovation.</p>
+        <p>Hi, I'm Emily. I'm a front-end web developer based in Toronto who loves creating great looking web products with rock-solid code. I currently work for <a href="http://www.shifthealth.ca">Shift Health</a> as their jr. front-end developer.</p>
       
         <div class="button">      
          <a href="mailto:eeporta@gmail.com">Contact Me</a>
         </div>
-      </div> <!--/.textAndButton-->
+      </div>
 
-    </div> <!--/.wholeSection-->
-    </div> <!--/.about-->
+    </div>
+    </div>
     
 
     <div class="portfolio clearfix" id="portfolio">
@@ -70,7 +70,7 @@ get_header();  ?>
       </div> <!--/.portfolioPiece-->
 
       <div class="portfolioPiece">
-      <a href="http://emilyporta.com/oldsite" target="_blank">
+      <a href="http://emilyporta.com/onepage" target="_blank">
         <video loop muted>
           <source src="<?php echo get_template_directory_uri(); ?>/video/oldsite.webm" type="video/webm"> 
           <source src="<?php echo get_template_directory_uri(); ?>/video/oldsite.mp4" type="video/mp4">
@@ -78,7 +78,7 @@ get_header();  ?>
         </video>
       </a>
       <p class="description">For my first Hackeryou project, I created a personal one-page site, with a clean, minimalistic design reflective of my preferred aesthetic. It includes a Javascript smoothscroll.</p>
-      <p>This site is live at: <a href="http://emilyporta.com/oldsite" target="_blank">emilyporta.com/oldsite</a></p>
+      <p>This site is live at: <a href="http://emilyporta.com/onepage" target="_blank">emilyporta.com/onepage</a></p>
       <p class="techDescription">HTML - CSS - Design</p>
       </div> <!--/.portfolioPiece-->
 
@@ -93,21 +93,21 @@ get_header();  ?>
       <p class="description">I took the complex site at <a href="http://hackeryou.com">hackeryou.com</a> and remade the homepage from scratch. The site is fully responsive, also using an original mobile design.</p> 
       <p>This site is live at: <a href="http://emilyporta.com/hackeryou" target="_blank">emilyporta.com/hackeryou</a></p>
       <p class="techDescription">Responsive design - HTML - CSS - SASS - Design from client mockups</p>
-      </div> <!--/.portfolioPiece-->
+      </div> 
 
 
       <div class="portfolioPiece">
-      <a href="http://emilyporta.com/styleguide" target="_blank">
-        <video loop muted>
-          <source src="<?php echo get_template_directory_uri(); ?>/video/styleguide.webm" type="video/webm"> 
-          <source src="<?php echo get_template_directory_uri(); ?>/video/styleguide.mp4" type="video/mp4">
-          I'm sorry; your browser doesn't support HTML5 video in WebM or MP4. The link below will take you to the project's live site.
-        </video>
-      </a>
-      <p class="description">This is a style guide created based on a client brief for the Deep Lagoon Hostel, showcasing part of my design and development process.</p>
-      <p>This site is live at: <a href="http://emilyporta.com/styleguide" target="_blank">emilyporta.com/styleguide</a></p>
-      <p class="techDescription">HTML - CSS - SASS - Wireframing - Design</p>
-      </div> <!--/.portfolioPiece-->
+        <a href="http://emilyporta.com/styleguide" target="_blank">
+          <video loop muted>
+            <source src="<?php echo get_template_directory_uri(); ?>/video/styleguide.webm" type="video/webm"> 
+            <source src="<?php echo get_template_directory_uri(); ?>/video/styleguide.mp4" type="video/mp4">
+            I'm sorry; your browser doesn't support HTML5 video in WebM or MP4. The link below will take you to the project's live site.
+          </video>
+        </a>
+        <p class="description">This is a style guide created based on a client brief for the Deep Lagoon Hostel, showcasing part of my design and development process.</p>
+        <p>This site is live at: <a href="http://emilyporta.com/styleguide" target="_blank">emilyporta.com/styleguide</a></p>
+        <p class="techDescription">HTML - CSS - SASS - Wireframing - Design</p>
+      </div>
 
       <div class="portfolioPiece">
       <a href="http://wolever.net" target="_blank">
@@ -120,12 +120,12 @@ get_header();  ?>
       <p class="description">A simple and clean one-page site created for developer David Wolever, utilizing CSS keyframe animation.</p>
       <p>This site is live at: <a href="http://wolever.net" target="_blank">wolever.net</a></p>
       <p class="techDescription">HTML - CSS - Design</p>
-      </div> <!--/.portfolioPiece-->
+      </div>
 
       <div class="button">
       <a href="<?php echo get_template_directory_uri(); ?>/emilyPortaResume.pdf">Download my resume</a>
       </div>
-    </div> <!--/.portfolio-->
+    </div>
 
     <div class="contact" id="contact">
       <div class="sectionHeadingContainer">
@@ -140,7 +140,7 @@ get_header();  ?>
         <a class="twitter-timeline" href="https://twitter.com/AgentEmily" data-widget-id="464069747043094528" height="460">Tweets by @AgentEmily</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
         </script>
-      </div> <!--/.controlTwitter-->
+      </div>
 
       <div class="socialBoxes clearfix">
         <div id="github" class="socialBox">
@@ -167,8 +167,8 @@ get_header();  ?>
           </a>
         </div>
 
-      </div> <!--/.socialBoxes-->
-    </div> <!--/.contact-->
+      </div>
+    </div>
     
-  </div> <!-- /.innerWrapper -->
+  </div>
 <?php get_footer(); ?>
